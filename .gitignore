@@ -1,0 +1,56 @@
+# --- Python / tooling -------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# --- Environments -----------------------------------------------------------
+# .python-version and uv.lock ARE committed: they pin the interpreter and deps.
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# --- Notebooks --------------------------------------------------------------
+.ipynb_checkpoints/
+# Training artefacts Unsloth drops next to the notebook.
+unsloth_compiled_cache/
+
+# --- Raw inputs -------------------------------------------------------------
+# 608 third-party puzzle images (~17 MB), needed only to re-run build_puzzles.py.
+# data/puzzles.jsonl is committed, so training, eval and the Colab bundle work
+# without them. Delete this line if you have redistribution rights and want a
+# one-command rebuild of the corpus from scratch (see plan.md §8.2).
+assets/
+
+# --- Caches / generated data ------------------------------------------------
+# HF decision rows: ~8 MB, re-fetchable with scripts/fetch_hf_decisions.py.
+data/hf/
+*.log
+data/*_log.txt
+
+# --- Run outputs ------------------------------------------------------------
+# LoRA adapters, eval rollouts, per-step reward logs. Regenerate with
+# scripts/eval_rollout.py / the notebook; not source.
+outputs/
+dist/
+
+# --- Model weights ----------------------------------------------------------
+*.safetensors
+*.gguf
+*.bin
+wandb/
+runs/
+
+# --- OS / editor ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
