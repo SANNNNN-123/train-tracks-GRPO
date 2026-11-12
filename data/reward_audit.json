@@ -1,0 +1,2436 @@
+{
+  "sample": [
+    "01022026-small",
+    "01032026-small",
+    "01042026-small",
+    "01052026-small",
+    "02012026-small",
+    "02022026-small"
+  ],
+  "seed": 20261110,
+  "rows": [
+    {
+      "puzzle_id": "01022026-small",
+      "size": "6x8",
+      "case": "reference",
+      "status": "solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 30.0,
+      "shaping": 0.0,
+      "total": 31.5,
+      "detail": "",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 22,
+        "components": 1,
+        "degree_histogram": {
+          "1": 2,
+          "2": 20
+        }
+      },
+      "grid": [
+        "..............SE",
+        "..SEEWSW......NS",
+        "..NSSENWSEEWEWNW",
+        "SENWNS..NS......",
+        "NW..NS..NS......",
+        "....NEEWNW......"
+      ]
+    },
+    {
+      "puzzle_id": "01022026-small",
+      "size": "6x8",
+      "case": "no-code",
+      "status": "no-code",
+      "format_ok": -0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 0.5,
+      "detail": "expected exactly one fenced block, found 0 in 33 chars",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01022026-small",
+      "size": "6x8",
+      "case": "wrong-signature",
+      "status": "invalid",
+      "format_ok": -0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 0.5,
+      "detail": "signature:first-arg-board",
+      "violations": [
+        "signature:first-arg-board"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01022026-small",
+      "size": "6x8",
+      "case": "import-cheat",
+      "status": "cheat",
+      "format_ok": 0.5,
+      "no_cheat": -20.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": -19.5,
+      "detail": "import",
+      "violations": [
+        "node:Import",
+        "import"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01022026-small",
+      "size": "6x8",
+      "case": "dunder-cheat",
+      "status": "cheat",
+      "format_ok": 0.5,
+      "no_cheat": -20.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": -19.5,
+      "detail": "dunder:__mro__",
+      "violations": [
+        "dunder:__mro__"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01022026-small",
+      "size": "6x8",
+      "case": "all-empty",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 1.5,
+      "detail": "givens:0,7 expected SE got ..; givens:4,0 expected NW got ..; boundary:0; boundary:endpoint (0, 7) has 0 off-grid ports",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 0,
+        "clue_diff_rows": [
+          -1,
+          -4,
+          -7,
+          -4,
+          -3,
+          -3
+        ],
+        "clue_diff_cols": [
+          -2,
+          -3,
+          -5,
+          -3,
+          -4,
+          -1,
+          -1,
+          -3
+        ],
+        "occupied": 0,
+        "components": 0,
+        "degree_histogram": {}
+      },
+      "grid": [
+        "................",
+        "................",
+        "................",
+        "................",
+        "................",
+        "................"
+      ]
+    },
+    {
+      "puzzle_id": "01022026-small",
+      "size": "6x8",
+      "case": "givens-only",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 1.5,
+      "detail": "dangling:2; clue_row:5; clue_col:8; disconnected:2",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 2,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          0,
+          -4,
+          -7,
+          -4,
+          -2,
+          -3
+        ],
+        "clue_diff_cols": [
+          -1,
+          -3,
+          -5,
+          -3,
+          -4,
+          -1,
+          -1,
+          -2
+        ],
+        "occupied": 2,
+        "components": 2,
+        "degree_histogram": {
+          "0": 2
+        }
+      },
+      "grid": [
+        "..............SE",
+        "................",
+        "................",
+        "................",
+        "NW..............",
+        "................"
+      ]
+    },
+    {
+      "puzzle_id": "01022026-small",
+      "size": "6x8",
+      "case": "row-shuffle",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.7843,
+      "total": 2.2843,
+      "detail": "dangling:27; boundary:3; boundary:off-grid port at non-endpoint 2,7E; clue_col:6",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 27,
+        "boundary_ports": 3,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          1,
+          -1,
+          -2,
+          -1,
+          1,
+          2,
+          0
+        ],
+        "occupied": 22,
+        "components": 15,
+        "degree_histogram": {
+          "0": 12,
+          "1": 6,
+          "2": 4
+        }
+      },
+      "grid": [
+        "..............SE",
+        "..NSSW..EW..SE..",
+        "..NSEWNWSEEWNWSE",
+        "..NSSE....NSNW..",
+        "NWNS..........NS",
+        "NE..NW..EW......"
+      ]
+    },
+    {
+      "puzzle_id": "01022026-small",
+      "size": "6x8",
+      "case": "exception",
+      "status": "error",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": -0.5,
+      "shaping": 0.0,
+      "total": 1.0,
+      "detail": "ValueError: nope",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01022026-small",
+      "size": "6x8",
+      "case": "timeout",
+      "status": "timeout",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": -0.5,
+      "shaping": 0.0,
+      "total": 1.0,
+      "detail": "step budget exhausted (5000)",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01022026-small",
+      "size": "6x8",
+      "case": "random-exact-counts",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.9205,
+      "total": 2.4205,
+      "detail": "dangling:32; boundary:4; boundary:off-grid port at non-endpoint 2,0W; boundary:off-grid port at non-endpoint 2,7E",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 32,
+        "boundary_ports": 4,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 22,
+        "components": 18,
+        "degree_histogram": {
+          "0": 14,
+          "1": 8
+        }
+      },
+      "grid": [
+        "..............SE",
+        "..SESE..SW....SW",
+        "NWSWNWNESWSW..NE",
+        "..SWEWNSEW......",
+        "NW..SE......SE..",
+        "....EWNWEW......"
+      ]
+    },
+    {
+      "puzzle_id": "01022026-small",
+      "size": "6x8",
+      "case": "plus-2x2-loop",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 1.2321,
+      "total": 2.7321,
+      "detail": "clue_row:2; clue_col:2; disconnected:2",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0
+        ],
+        "occupied": 26,
+        "components": 2,
+        "degree_histogram": {
+          "1": 2,
+          "2": 24
+        }
+      },
+      "grid": [
+        "........SESW..SE",
+        "..SEEWSWNENW..NS",
+        "..NSSENWSEEWEWNW",
+        "SENWNS..NS......",
+        "NW..NS..NS......",
+        "....NEEWNW......"
+      ]
+    },
+    {
+      "puzzle_id": "01032026-small",
+      "size": "6x9",
+      "case": "reference",
+      "status": "solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 30.0,
+      "shaping": 0.0,
+      "total": 31.5,
+      "detail": "",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 25,
+        "components": 1,
+        "degree_histogram": {
+          "1": 2,
+          "2": 23
+        }
+      },
+      "grid": [
+        "..SESW............",
+        "..NSNS..SEEWEWEWSW",
+        "SENWNEEWNW......NS",
+        "NEEWSW..........NS",
+        "....NS..........NS",
+        "....NEEWSW......NS"
+      ]
+    },
+    {
+      "puzzle_id": "01032026-small",
+      "size": "6x9",
+      "case": "no-code",
+      "status": "no-code",
+      "format_ok": -0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 0.5,
+      "detail": "expected exactly one fenced block, found 0 in 33 chars",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01032026-small",
+      "size": "6x9",
+      "case": "wrong-signature",
+      "status": "invalid",
+      "format_ok": -0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 0.5,
+      "detail": "signature:first-arg-board",
+      "violations": [
+        "signature:first-arg-board"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01032026-small",
+      "size": "6x9",
+      "case": "import-cheat",
+      "status": "cheat",
+      "format_ok": 0.5,
+      "no_cheat": -20.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": -19.5,
+      "detail": "import",
+      "violations": [
+        "node:Import",
+        "import"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01032026-small",
+      "size": "6x9",
+      "case": "dunder-cheat",
+      "status": "cheat",
+      "format_ok": 0.5,
+      "no_cheat": -20.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": -19.5,
+      "detail": "dunder:__mro__",
+      "violations": [
+        "dunder:__mro__"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01032026-small",
+      "size": "6x9",
+      "case": "all-empty",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 1.5,
+      "detail": "givens:5,4 expected SW got ..; givens:5,8 expected NS got ..; boundary:0; boundary:endpoint (5, 4) has 0 off-grid ports",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 0,
+        "clue_diff_rows": [
+          -2,
+          -7,
+          -6,
+          -4,
+          -2,
+          -4
+        ],
+        "clue_diff_cols": [
+          -2,
+          -4,
+          -6,
+          -2,
+          -3,
+          -1,
+          -1,
+          -1,
+          -5
+        ],
+        "occupied": 0,
+        "components": 0,
+        "degree_histogram": {}
+      },
+      "grid": [
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        ".................."
+      ]
+    },
+    {
+      "puzzle_id": "01032026-small",
+      "size": "6x9",
+      "case": "givens-only",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 1.5,
+      "detail": "dangling:2; clue_row:6; clue_col:9; disconnected:2",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 2,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          -2,
+          -7,
+          -6,
+          -4,
+          -2,
+          -2
+        ],
+        "clue_diff_cols": [
+          -2,
+          -4,
+          -6,
+          -2,
+          -2,
+          -1,
+          -1,
+          -1,
+          -4
+        ],
+        "occupied": 2,
+        "components": 2,
+        "degree_histogram": {
+          "0": 2
+        }
+      },
+      "grid": [
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        "........SW......NS"
+      ]
+    },
+    {
+      "puzzle_id": "01032026-small",
+      "size": "6x9",
+      "case": "row-shuffle",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.725,
+      "total": 2.225,
+      "detail": "dangling:28; boundary:6; boundary:off-grid port at non-endpoint 1,0W; boundary:off-grid port at non-endpoint 1,8E",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 28,
+        "boundary_ports": 6,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          1,
+          0,
+          -5,
+          1,
+          2,
+          2,
+          1,
+          0,
+          -2
+        ],
+        "occupied": 25,
+        "components": 17,
+        "degree_histogram": {
+          "0": 11,
+          "1": 12,
+          "2": 2
+        }
+      },
+      "grid": [
+        "......SWSE........",
+        "SW..EWNSNS..EWEWSE",
+        "SENE....NWNSNW..EW",
+        "..EW..NESWNS......",
+        "..NS......NS......",
+        "EWNE....SW......NS"
+      ]
+    },
+    {
+      "puzzle_id": "01032026-small",
+      "size": "6x9",
+      "case": "exception",
+      "status": "error",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": -0.5,
+      "shaping": 0.0,
+      "total": 1.0,
+      "detail": "ValueError: nope",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01032026-small",
+      "size": "6x9",
+      "case": "timeout",
+      "status": "timeout",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": -0.5,
+      "shaping": 0.0,
+      "total": 1.0,
+      "detail": "step budget exhausted (5000)",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01032026-small",
+      "size": "6x9",
+      "case": "random-exact-counts",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.96,
+      "total": 2.46,
+      "detail": "dangling:31; boundary:7; boundary:off-grid port at non-endpoint 0,1N; boundary:off-grid port at non-endpoint 1,8E",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 31,
+        "boundary_ports": 7,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 25,
+        "components": 19,
+        "degree_histogram": {
+          "0": 14,
+          "1": 10,
+          "2": 1
+        }
+      },
+      "grid": [
+        "..NSSW............",
+        "NSSENESWNS..SW..SE",
+        "EW..SWSWNE....NENS",
+        "..NWNW....SE....SW",
+        "....SW..........EW",
+        "..EWSW..SW......NS"
+      ]
+    },
+    {
+      "puzzle_id": "01032026-small",
+      "size": "6x9",
+      "case": "plus-2x2-loop",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 1.2583,
+      "total": 2.7583,
+      "detail": "clue_row:2; clue_col:2; disconnected:2",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          0,
+          0,
+          2,
+          2,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0
+        ],
+        "occupied": 29,
+        "components": 2,
+        "degree_histogram": {
+          "1": 2,
+          "2": 27
+        }
+      },
+      "grid": [
+        "..SESW............",
+        "..NSNS..SEEWEWEWSW",
+        "SENWNEEWNWSESW..NS",
+        "NEEWSW....NENW..NS",
+        "....NS..........NS",
+        "....NEEWSW......NS"
+      ]
+    },
+    {
+      "puzzle_id": "01042026-small",
+      "size": "7x6",
+      "case": "reference",
+      "status": "solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 30.0,
+      "shaping": 0.0,
+      "total": 31.5,
+      "detail": "",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 19,
+        "components": 1,
+        "degree_histogram": {
+          "1": 2,
+          "2": 17
+        }
+      },
+      "grid": [
+        "..SEEWSW....",
+        "..NS..NSSEEW",
+        "SENW..NSNS..",
+        "NS....NENW..",
+        "NS..........",
+        "NEEWSW......",
+        "....NS......"
+      ]
+    },
+    {
+      "puzzle_id": "01042026-small",
+      "size": "7x6",
+      "case": "no-code",
+      "status": "no-code",
+      "format_ok": -0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 0.5,
+      "detail": "expected exactly one fenced block, found 0 in 33 chars",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01042026-small",
+      "size": "7x6",
+      "case": "wrong-signature",
+      "status": "invalid",
+      "format_ok": -0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 0.5,
+      "detail": "signature:first-arg-board",
+      "violations": [
+        "signature:first-arg-board"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01042026-small",
+      "size": "7x6",
+      "case": "import-cheat",
+      "status": "cheat",
+      "format_ok": 0.5,
+      "no_cheat": -20.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": -19.5,
+      "detail": "import",
+      "violations": [
+        "node:Import",
+        "import"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01042026-small",
+      "size": "7x6",
+      "case": "dunder-cheat",
+      "status": "cheat",
+      "format_ok": 0.5,
+      "no_cheat": -20.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": -19.5,
+      "detail": "dunder:__mro__",
+      "violations": [
+        "dunder:__mro__"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01042026-small",
+      "size": "7x6",
+      "case": "all-empty",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 1.5,
+      "detail": "givens:1,5 expected EW got ..; givens:3,0 expected NS got ..; givens:6,2 expected NS got ..; boundary:0",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 0,
+        "clue_diff_rows": [
+          -3,
+          -4,
+          -4,
+          -3,
+          -1,
+          -3,
+          -1
+        ],
+        "clue_diff_cols": [
+          -4,
+          -4,
+          -3,
+          -4,
+          -3,
+          -1
+        ],
+        "occupied": 0,
+        "components": 0,
+        "degree_histogram": {}
+      },
+      "grid": [
+        "............",
+        "............",
+        "............",
+        "............",
+        "............",
+        "............",
+        "............"
+      ]
+    },
+    {
+      "puzzle_id": "01042026-small",
+      "size": "7x6",
+      "case": "givens-only",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 1.5,
+      "detail": "dangling:4; clue_row:6; clue_col:5; disconnected:3",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 4,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          -3,
+          -3,
+          -4,
+          -2,
+          -1,
+          -3,
+          0
+        ],
+        "clue_diff_cols": [
+          -3,
+          -4,
+          -2,
+          -4,
+          -3,
+          0
+        ],
+        "occupied": 3,
+        "components": 3,
+        "degree_histogram": {
+          "0": 3
+        }
+      },
+      "grid": [
+        "............",
+        "..........EW",
+        "............",
+        "NS..........",
+        "............",
+        "............",
+        "....NS......"
+      ]
+    },
+    {
+      "puzzle_id": "01042026-small",
+      "size": "7x6",
+      "case": "row-shuffle",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.7753,
+      "total": 2.2753,
+      "detail": "dangling:26; clue_col:6; disconnected:14; degree:(0, 2) 1 != 2",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 26,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          -2,
+          -1,
+          1,
+          -1,
+          1,
+          2
+        ],
+        "occupied": 19,
+        "components": 14,
+        "degree_histogram": {
+          "0": 11,
+          "1": 6,
+          "2": 2
+        }
+      },
+      "grid": [
+        "....SESWEW..",
+        "SENS....NSEW",
+        "....NWSENSNS",
+        "NSNE....NW..",
+        "..........NS",
+        "..NESWEW....",
+        "....NS......"
+      ]
+    },
+    {
+      "puzzle_id": "01042026-small",
+      "size": "7x6",
+      "case": "exception",
+      "status": "error",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": -0.5,
+      "shaping": 0.0,
+      "total": 1.0,
+      "detail": "ValueError: nope",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01042026-small",
+      "size": "7x6",
+      "case": "timeout",
+      "status": "timeout",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": -0.5,
+      "shaping": 0.0,
+      "total": 1.0,
+      "detail": "step budget exhausted (5000)",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01042026-small",
+      "size": "7x6",
+      "case": "random-exact-counts",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.9079,
+      "total": 2.4079,
+      "detail": "dangling:27; boundary:5; boundary:off-grid port at non-endpoint 0,3N; boundary:off-grid port at non-endpoint 1,0W",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 27,
+        "boundary_ports": 5,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 19,
+        "components": 16,
+        "degree_histogram": {
+          "0": 13,
+          "1": 6
+        }
+      },
+      "grid": [
+        "..SE..NEEW..",
+        "EW..SE..SWEW",
+        "SESE..EWSW..",
+        "NS..NWNS....",
+        "..SW........",
+        "NWSW..NE....",
+        "....NS......"
+      ]
+    },
+    {
+      "puzzle_id": "01042026-small",
+      "size": "7x6",
+      "case": "plus-2x2-loop",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 1.2788,
+      "total": 2.7788,
+      "detail": "clue_row:2; clue_col:2; disconnected:2",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          2,
+          2,
+          0,
+          0,
+          0
+        ],
+        "occupied": 23,
+        "components": 2,
+        "degree_histogram": {
+          "1": 2,
+          "2": 21
+        }
+      },
+      "grid": [
+        "..SEEWSW....",
+        "..NS..NSSEEW",
+        "SENW..NSNS..",
+        "NSSESWNENW..",
+        "NSNENW......",
+        "NEEWSW......",
+        "....NS......"
+      ]
+    },
+    {
+      "puzzle_id": "01052026-small",
+      "size": "8x6",
+      "case": "reference",
+      "status": "solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 30.0,
+      "shaping": 0.0,
+      "total": 31.5,
+      "detail": "",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 23,
+        "components": 1,
+        "degree_histogram": {
+          "1": 2,
+          "2": 21
+        }
+      },
+      "grid": [
+        "......SESW..",
+        "SEEWSWNSNS..",
+        "NESWNENWNEEW",
+        "..NS........",
+        "..NS........",
+        "..NESW......",
+        "....NESW....",
+        "SEEWEWNW...."
+      ]
+    },
+    {
+      "puzzle_id": "01052026-small",
+      "size": "8x6",
+      "case": "no-code",
+      "status": "no-code",
+      "format_ok": -0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 0.5,
+      "detail": "expected exactly one fenced block, found 0 in 33 chars",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01052026-small",
+      "size": "8x6",
+      "case": "wrong-signature",
+      "status": "invalid",
+      "format_ok": -0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 0.5,
+      "detail": "signature:first-arg-board",
+      "violations": [
+        "signature:first-arg-board"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01052026-small",
+      "size": "8x6",
+      "case": "import-cheat",
+      "status": "cheat",
+      "format_ok": 0.5,
+      "no_cheat": -20.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": -19.5,
+      "detail": "import",
+      "violations": [
+        "node:Import",
+        "import"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01052026-small",
+      "size": "8x6",
+      "case": "dunder-cheat",
+      "status": "cheat",
+      "format_ok": 0.5,
+      "no_cheat": -20.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": -19.5,
+      "detail": "dunder:__mro__",
+      "violations": [
+        "dunder:__mro__"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01052026-small",
+      "size": "8x6",
+      "case": "all-empty",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 1.5,
+      "detail": "givens:2,5 expected EW got ..; givens:7,0 expected SE got ..; boundary:0; boundary:endpoint (2, 5) has 0 off-grid ports",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 0,
+        "clue_diff_rows": [
+          -2,
+          -5,
+          -6,
+          -1,
+          -1,
+          -2,
+          -2,
+          -4
+        ],
+        "clue_diff_cols": [
+          -3,
+          -6,
+          -5,
+          -5,
+          -3,
+          -1
+        ],
+        "occupied": 0,
+        "components": 0,
+        "degree_histogram": {}
+      },
+      "grid": [
+        "............",
+        "............",
+        "............",
+        "............",
+        "............",
+        "............",
+        "............",
+        "............"
+      ]
+    },
+    {
+      "puzzle_id": "01052026-small",
+      "size": "8x6",
+      "case": "givens-only",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 1.5,
+      "detail": "dangling:2; clue_row:8; clue_col:5; disconnected:2",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 2,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          -2,
+          -5,
+          -5,
+          -1,
+          -1,
+          -2,
+          -2,
+          -3
+        ],
+        "clue_diff_cols": [
+          -2,
+          -6,
+          -5,
+          -5,
+          -3,
+          0
+        ],
+        "occupied": 2,
+        "components": 2,
+        "degree_histogram": {
+          "0": 2
+        }
+      },
+      "grid": [
+        "............",
+        "............",
+        "..........EW",
+        "............",
+        "............",
+        "............",
+        "............",
+        "SE.........."
+      ]
+    },
+    {
+      "puzzle_id": "01052026-small",
+      "size": "8x6",
+      "case": "row-shuffle",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.973,
+      "total": 2.473,
+      "detail": "dangling:22; boundary:4; boundary:off-grid port at non-endpoint 0,0W; boundary:off-grid port at non-endpoint 1,5E",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 22,
+        "boundary_ports": 4,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          2,
+          0,
+          0,
+          -1,
+          -2,
+          1
+        ],
+        "occupied": 23,
+        "components": 13,
+        "degree_histogram": {
+          "0": 7,
+          "1": 12,
+          "2": 4
+        }
+      },
+      "grid": [
+        "SWSE........",
+        "NSSWEWNS..SE",
+        "NENENESWNWEW",
+        "......NS....",
+        "NS..........",
+        "..NESW......",
+        "..SWNE......",
+        "SENWEWEW...."
+      ]
+    },
+    {
+      "puzzle_id": "01052026-small",
+      "size": "8x6",
+      "case": "exception",
+      "status": "error",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": -0.5,
+      "shaping": 0.0,
+      "total": 1.0,
+      "detail": "ValueError: nope",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01052026-small",
+      "size": "8x6",
+      "case": "timeout",
+      "status": "timeout",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": -0.5,
+      "shaping": 0.0,
+      "total": 1.0,
+      "detail": "step budget exhausted (5000)",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "01052026-small",
+      "size": "8x6",
+      "case": "random-exact-counts",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.913,
+      "total": 2.413,
+      "detail": "dangling:32; boundary:6; boundary:off-grid port at non-endpoint 0,4N; boundary:off-grid port at non-endpoint 2,0W",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 32,
+        "boundary_ports": 6,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 23,
+        "components": 19,
+        "degree_histogram": {
+          "0": 15,
+          "1": 8
+        }
+      },
+      "grid": [
+        "..SW....NW..",
+        "SESWSWEWNE..",
+        "EWSEEWNSNSEW",
+        "......SW....",
+        "......NW....",
+        "..NSEW......",
+        "..EWSE......",
+        "SEEWSENS...."
+      ]
+    },
+    {
+      "puzzle_id": "01052026-small",
+      "size": "8x6",
+      "case": "plus-2x2-loop",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 1.2429,
+      "total": 2.7429,
+      "detail": "clue_row:2; clue_col:2; disconnected:2",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          2,
+          2,
+          0,
+          0
+        ],
+        "occupied": 27,
+        "components": 2,
+        "degree_histogram": {
+          "1": 2,
+          "2": 25
+        }
+      },
+      "grid": [
+        "......SESW..",
+        "SEEWSWNSNS..",
+        "NESWNENWNEEW",
+        "..NSSESW....",
+        "..NSNENW....",
+        "..NESW......",
+        "....NESW....",
+        "SEEWEWNW...."
+      ]
+    },
+    {
+      "puzzle_id": "02012026-small",
+      "size": "9x9",
+      "case": "reference",
+      "status": "solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 30.0,
+      "shaping": 0.0,
+      "total": 31.5,
+      "detail": "",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 37,
+        "components": 1,
+        "degree_histogram": {
+          "1": 2,
+          "2": 35
+        }
+      },
+      "grid": [
+        "..SEEWEWSW........",
+        "..NS....NEEWSW....",
+        "..NS........NEEWSW",
+        "..NS......SEEWEWNW",
+        "SENW..SEEWNW......",
+        "NS....NEEWEWEWEWEW",
+        "NS................",
+        "NESW..............",
+        "..NEEWEWEWSW......"
+      ]
+    },
+    {
+      "puzzle_id": "02012026-small",
+      "size": "9x9",
+      "case": "no-code",
+      "status": "no-code",
+      "format_ok": -0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 0.5,
+      "detail": "expected exactly one fenced block, found 0 in 33 chars",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "02012026-small",
+      "size": "9x9",
+      "case": "wrong-signature",
+      "status": "invalid",
+      "format_ok": -0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 0.5,
+      "detail": "signature:first-arg-board",
+      "violations": [
+        "signature:first-arg-board"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "02012026-small",
+      "size": "9x9",
+      "case": "import-cheat",
+      "status": "cheat",
+      "format_ok": 0.5,
+      "no_cheat": -20.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": -19.5,
+      "detail": "import",
+      "violations": [
+        "node:Import",
+        "import"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "02012026-small",
+      "size": "9x9",
+      "case": "dunder-cheat",
+      "status": "cheat",
+      "format_ok": 0.5,
+      "no_cheat": -20.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": -19.5,
+      "detail": "dunder:__mro__",
+      "violations": [
+        "dunder:__mro__"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "02012026-small",
+      "size": "9x9",
+      "case": "all-empty",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 1.5,
+      "detail": "givens:0,2 expected EW got ..; givens:2,7 expected EW got ..; givens:3,6 expected EW got ..; givens:5,4 expected EW got ..",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 0,
+        "clue_diff_rows": [
+          -4,
+          -4,
+          -4,
+          -5,
+          -5,
+          -7,
+          -1,
+          -2,
+          -5
+        ],
+        "clue_diff_cols": [
+          -4,
+          -7,
+          -2,
+          -4,
+          -5,
+          -5,
+          -4,
+          -3,
+          -3
+        ],
+        "occupied": 0,
+        "components": 0,
+        "degree_histogram": {}
+      },
+      "grid": [
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        ".................."
+      ]
+    },
+    {
+      "puzzle_id": "02012026-small",
+      "size": "9x9",
+      "case": "givens-only",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 1.5,
+      "detail": "dangling:12; clue_row:9; clue_col:9; disconnected:7",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 12,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          -3,
+          -4,
+          -3,
+          -4,
+          -5,
+          -4,
+          -1,
+          -2,
+          -4
+        ],
+        "clue_diff_cols": [
+          -4,
+          -7,
+          -1,
+          -4,
+          -4,
+          -4,
+          -2,
+          -2,
+          -2
+        ],
+        "occupied": 7,
+        "components": 7,
+        "degree_histogram": {
+          "0": 7
+        }
+      },
+      "grid": [
+        "....EW............",
+        "..................",
+        "..............EW..",
+        "............EW....",
+        "..................",
+        "........EW..EW..EW",
+        "..................",
+        "..................",
+        "..........SW......"
+      ]
+    },
+    {
+      "puzzle_id": "02012026-small",
+      "size": "9x9",
+      "case": "row-shuffle",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.7952,
+      "total": 2.2952,
+      "detail": "dangling:50; boundary:6; boundary:off-grid port at non-endpoint 1,0W; boundary:off-grid port at non-endpoint 3,0W",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 50,
+        "boundary_ports": 6,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          -5,
+          3,
+          -1,
+          -1,
+          1,
+          1,
+          2,
+          0
+        ],
+        "occupied": 37,
+        "components": 28,
+        "degree_histogram": {
+          "0": 21,
+          "1": 14,
+          "2": 2
+        }
+      },
+      "grid": [
+        "....EW..SEEW..SW..",
+        "EWNE....NSSW......",
+        "....NE....SWNSEW..",
+        "EW..NS......EWNWSE",
+        "SE....EWNW..SE..NW",
+        "..EWNS..EWEWEWNEEW",
+        "..........NS......",
+        "......SW....NE....",
+        "EW..EWEW..SW..NE.."
+      ]
+    },
+    {
+      "puzzle_id": "02012026-small",
+      "size": "9x9",
+      "case": "exception",
+      "status": "error",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": -0.5,
+      "shaping": 0.0,
+      "total": 1.0,
+      "detail": "ValueError: nope",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "02012026-small",
+      "size": "9x9",
+      "case": "timeout",
+      "status": "timeout",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": -0.5,
+      "shaping": 0.0,
+      "total": 1.0,
+      "detail": "step budget exhausted (5000)",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "02012026-small",
+      "size": "9x9",
+      "case": "random-exact-counts",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.9122,
+      "total": 2.4122,
+      "detail": "dangling:49; boundary:11; boundary:off-grid port at non-endpoint 0,1N; boundary:off-grid port at non-endpoint 0,5N",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 49,
+        "boundary_ports": 11,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 37,
+        "components": 30,
+        "degree_histogram": {
+          "0": 23,
+          "1": 14
+        }
+      },
+      "grid": [
+        "..NEEW..SENW......",
+        "EW..SW..SW....EW..",
+        "..SW....NS..NSEW..",
+        "NWSW..SW....EW..NE",
+        "..NE..SE..NWNESW..",
+        "SENE..SWEWNEEW..EW",
+        "..NS..............",
+        "..........NE....EW",
+        "NWNS..SENESW......"
+      ]
+    },
+    {
+      "puzzle_id": "02012026-small",
+      "size": "9x9",
+      "case": "plus-2x2-loop",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 1.4028,
+      "total": 2.9028,
+      "detail": "clue_row:2; clue_col:2; disconnected:2",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2
+        ],
+        "occupied": 41,
+        "components": 2,
+        "degree_histogram": {
+          "1": 2,
+          "2": 39
+        }
+      },
+      "grid": [
+        "..SEEWEWSW....SESW",
+        "..NS....NEEWSWNENW",
+        "..NS........NEEWSW",
+        "..NS......SEEWEWNW",
+        "SENW..SEEWNW......",
+        "NS....NEEWEWEWEWEW",
+        "NS................",
+        "NESW..............",
+        "..NEEWEWEWSW......"
+      ]
+    },
+    {
+      "puzzle_id": "02022026-small",
+      "size": "8x9",
+      "case": "reference",
+      "status": "solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 30.0,
+      "shaping": 0.0,
+      "total": 31.5,
+      "detail": "",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 34,
+        "components": 1,
+        "degree_histogram": {
+          "1": 2,
+          "2": 32
+        }
+      },
+      "grid": [
+        "....SENW....NS....",
+        "....NESW....NESW..",
+        "......NEEWSW..NESW",
+        "..........NSSEEWNW",
+        "........SENWNS....",
+        "SEEWEWEWNW..NS....",
+        "NESW....SEEWNW....",
+        "..NEEWEWNW........"
+      ]
+    },
+    {
+      "puzzle_id": "02022026-small",
+      "size": "8x9",
+      "case": "no-code",
+      "status": "no-code",
+      "format_ok": -0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 0.5,
+      "detail": "expected exactly one fenced block, found 0 in 33 chars",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "02022026-small",
+      "size": "8x9",
+      "case": "wrong-signature",
+      "status": "invalid",
+      "format_ok": -0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 0.5,
+      "detail": "signature:first-arg-board",
+      "violations": [
+        "signature:first-arg-board"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "02022026-small",
+      "size": "8x9",
+      "case": "import-cheat",
+      "status": "cheat",
+      "format_ok": 0.5,
+      "no_cheat": -20.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": -19.5,
+      "detail": "import",
+      "violations": [
+        "node:Import",
+        "import"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "02022026-small",
+      "size": "8x9",
+      "case": "dunder-cheat",
+      "status": "cheat",
+      "format_ok": 0.5,
+      "no_cheat": -20.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": -19.5,
+      "detail": "dunder:__mro__",
+      "violations": [
+        "dunder:__mro__"
+      ],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "02022026-small",
+      "size": "8x9",
+      "case": "all-empty",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 1.5,
+      "detail": "givens:0,3 expected NW got ..; givens:0,6 expected NS got ..; givens:2,3 expected NE got ..; givens:3,5 expected NS got ..",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 0,
+        "clue_diff_rows": [
+          -3,
+          -4,
+          -5,
+          -4,
+          -3,
+          -6,
+          -5,
+          -4
+        ],
+        "clue_diff_cols": [
+          -2,
+          -3,
+          -4,
+          -5,
+          -5,
+          -4,
+          -6,
+          -3,
+          -2
+        ],
+        "occupied": 0,
+        "components": 0,
+        "degree_histogram": {}
+      },
+      "grid": [
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        "..................",
+        ".................."
+      ]
+    },
+    {
+      "puzzle_id": "02022026-small",
+      "size": "8x9",
+      "case": "givens-only",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.0,
+      "total": 1.5,
+      "detail": "dangling:8; clue_row:8; clue_col:9; disconnected:5",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 8,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          -1,
+          -4,
+          -4,
+          -3,
+          -3,
+          -6,
+          -4,
+          -4
+        ],
+        "clue_diff_cols": [
+          -2,
+          -3,
+          -4,
+          -3,
+          -5,
+          -3,
+          -4,
+          -3,
+          -2
+        ],
+        "occupied": 5,
+        "components": 5,
+        "degree_histogram": {
+          "0": 5
+        }
+      },
+      "grid": [
+        "......NW....NS....",
+        "..................",
+        "......NE..........",
+        "..........NS......",
+        "..................",
+        "..................",
+        "............NW....",
+        ".................."
+      ]
+    },
+    {
+      "puzzle_id": "02022026-small",
+      "size": "8x9",
+      "case": "row-shuffle",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.7507,
+      "total": 2.2507,
+      "detail": "dangling:46; boundary:6; boundary:off-grid port at non-endpoint 4,0W; boundary:off-grid port at non-endpoint 5,0W",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 46,
+        "boundary_ports": 6,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          5,
+          -1,
+          0,
+          -2,
+          0,
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "occupied": 34,
+        "components": 26,
+        "degree_histogram": {
+          "0": 21,
+          "1": 10,
+          "2": 3
+        }
+      },
+      "grid": [
+        "SE....NW....NS....",
+        "NE..NE....SWSW....",
+        "NE....NEEWSW..SW..",
+        "SENW....EWNS......",
+        "NWSE........NS....",
+        "NW..EWSEEWNSEW....",
+        "....EW..SE..NWSWNE",
+        "EW..NE..NWEW......"
+      ]
+    },
+    {
+      "puzzle_id": "02022026-small",
+      "size": "8x9",
+      "case": "exception",
+      "status": "error",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": -0.5,
+      "shaping": 0.0,
+      "total": 1.0,
+      "detail": "ValueError: nope",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "02022026-small",
+      "size": "8x9",
+      "case": "timeout",
+      "status": "timeout",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": -0.5,
+      "shaping": 0.0,
+      "total": 1.0,
+      "detail": "step budget exhausted (5000)",
+      "violations": [],
+      "diagnostics": {},
+      "grid": null
+    },
+    {
+      "puzzle_id": "02022026-small",
+      "size": "8x9",
+      "case": "random-exact-counts",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 0.9265,
+      "total": 2.4265,
+      "detail": "dangling:49; boundary:5; boundary:off-grid port at non-endpoint 6,0W; boundary:off-grid port at non-endpoint 7,4S",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 49,
+        "boundary_ports": 5,
+        "clue_diff_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 34,
+        "components": 27,
+        "degree_histogram": {
+          "0": 21,
+          "1": 12,
+          "2": 1
+        }
+      },
+      "grid": [
+        "..EW..NW....NS....",
+        "......EWSWSENW....",
+        "....NENEEW..NENE..",
+        "......SE..NSSEEW..",
+        "....SWSENE........",
+        "NEEWSE..NENE..NE..",
+        "EWEW......SWNW..NW",
+        "....NE..SW..SE..NW"
+      ]
+    },
+    {
+      "puzzle_id": "02022026-small",
+      "size": "8x9",
+      "case": "plus-2x2-loop",
+      "status": "not-solved",
+      "format_ok": 0.5,
+      "no_cheat": 1.0,
+      "solved": 0.0,
+      "shaping": 1.375,
+      "total": 2.875,
+      "detail": "clue_row:2; clue_col:2; disconnected:2",
+      "violations": [],
+      "diagnostics": {
+        "dangling": 0,
+        "boundary_ports": 2,
+        "clue_diff_rows": [
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "clue_diff_cols": [
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "occupied": 38,
+        "components": 2,
+        "degree_histogram": {
+          "1": 2,
+          "2": 36
+        }
+      },
+      "grid": [
+        "SESWSENW....NS....",
+        "NENWNESW....NESW..",
+        "......NEEWSW..NESW",
+        "..........NSSEEWNW",
+        "........SENWNS....",
+        "SEEWEWEWNW..NS....",
+        "NESW....SEEWNW....",
+        "..NEEWEWNW........"
+      ]
+    }
+  ],
+  "reference_mean": 31.5,
+  "max_non_solve": 2.9028,
+  "problems": []
+}

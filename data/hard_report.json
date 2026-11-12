@@ -1,0 +1,111 @@
+{
+  "solved": {
+    "09022026-medium": {
+      "strategy": "warnsdorff-NSWE",
+      "status": "solved",
+      "seconds": 86.272,
+      "moves": 3468107,
+      "detail": "",
+      "grid": [
+        "....SESW............",
+        "SEEWNWNEEWSW........",
+        "NW......SENW..SESW..",
+        "..SESW..NEEWEWNWNESW",
+        "..NSNS......SEEWEWNW",
+        "SENWNESW....NS......",
+        "NS....NS..SENW......",
+        "NSSESWNESWNS........",
+        "NENWNS..NENW........",
+        "....NS.............."
+      ]
+    },
+    "22062026-medium": {
+      "strategy": "warnsdorff-NSWE",
+      "status": "solved",
+      "seconds": 62.455,
+      "moves": 2434771,
+      "detail": "",
+      "grid": [
+        "....SEEWSW..........",
+        "....NS..NSSESW......",
+        "SEEWNWSENWNSNS......",
+        "NESW..NEEWNWNESW....",
+        "..NS..........NEEWEW",
+        "..NS..SESW..........",
+        "..NS..NSNEEWSW......",
+        "..NESWNS....NESW....",
+        "....NSNS......NESW..",
+        "....NENW....SEEWNW.."
+      ]
+    },
+    "20082026-medium": {
+      "strategy": "warnsdorff-NSWE",
+      "status": "solved",
+      "seconds": 1.599,
+      "moves": 101003,
+      "detail": "",
+      "grid": [
+        "......SEEWEWEWNW....",
+        "....SENW......SESW..",
+        "SEEWNW........NSNESW",
+        "NEEWSW....SEEWNW..NS",
+        "....NS....NS..SEEWNW",
+        "....NS..SENW..NS....",
+        "SEEWNWSENW..SENW....",
+        "NS....NS....NEEWEWEW",
+        "NESWSENW............",
+        "..NENW.............."
+      ]
+    }
+  },
+  "results": {
+    "09022026-medium": [
+      {
+        "strategy": "plain-NSWE",
+        "status": "error",
+        "seconds": 21.259,
+        "moves": 1000000,
+        "detail": "derive: path from (4, 7) (piece EW) has 0 continuations: [] (solver said Max move count reached)"
+      },
+      {
+        "strategy": "warnsdorff-NSWE",
+        "status": "solved",
+        "seconds": 86.272,
+        "moves": 3468107,
+        "detail": ""
+      }
+    ],
+    "22062026-medium": [
+      {
+        "strategy": "plain-NSWE",
+        "status": "error",
+        "seconds": 22.016,
+        "moves": 1000000,
+        "detail": "derive: path from (9, 1) (piece NE) has 0 continuations: [] (solver said Max move count reached)"
+      },
+      {
+        "strategy": "warnsdorff-NSWE",
+        "status": "solved",
+        "seconds": 62.455,
+        "moves": 2434771,
+        "detail": ""
+      }
+    ],
+    "20082026-medium": [
+      {
+        "strategy": "plain-NSWE",
+        "status": "error",
+        "seconds": 21.689,
+        "moves": 1000000,
+        "detail": "derive: path from (5, 3) (piece NW) has 0 continuations: [] (solver said Max move count reached)"
+      },
+      {
+        "strategy": "warnsdorff-NSWE",
+        "status": "solved",
+        "seconds": 1.599,
+        "moves": 101003,
+        "detail": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "hf_puzzles": 608,
+  "corpus_puzzles": 608,
+  "compared": 608,
+  "missing_from_corpus": [],
+  "not_in_hf": [],
+  "not_in_hf_count": 0,
+  "checks_passed": {
+    "dims": 608,
+    "givens": 608,
+    "given_count": 608,
+    "steps": 608,
+    "solution": 608
+  },
+  "agreement": {
+    "dims": 1.0,
+    "givens": 1.0,
+    "given_count": 1.0,
+    "steps": 1.0,
+    "solution": 1.0
+  },
+  "per_split": {
+    "test_medium": {
+      "compared": 304,
+      "ok": 304,
+      "agreement": 1.0
+    },
+    "test_small": {
+      "compared": 46,
+      "ok": 46,
+      "agreement": 1.0
+    },
+    "train": {
+      "compared": 212,
+      "ok": 212,
+      "agreement": 1.0
+    },
+    "validation": {
+      "compared": 46,
+      "ok": 46,
+      "agreement": 1.0
+    }
+  },
+  "mismatches": []
+}
