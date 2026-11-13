@@ -83,15 +83,29 @@ def render_grid_svg(
     highlight: dict[tuple[int, int], str] | None = None,
     title: str = "",
     show_clues: bool = True,
+    row_clues_right: bool = False,
+    bold_clues: bool = False,
+    row_labels: bool = False,
+    col_labels: bool = False,
 ) -> str:
-    """Draw one grid: clues, given pieces in blue, other pieces in `base_colour`."""
+    """Draw one grid: clues, given pieces in blue, other pieces in `base_colour`.
+
+    `row_labels` / `col_labels` add non-bold r1..rN / c1..cN indices on the left
+    and bottom. They live in extra viewBox padding, so grid coordinates do not
+    move.
+    """
     cells = cells or givens_cells(puzzle)
     highlight = highlight or {}
-    left = 30 if show_clues else 8
+    left = 8 if row_clues_right or not show_clues else 30
     top = 24 if show_clues else 8
-    width = left + puzzle.cols * cell + 8
+    right = 30 if row_clues_right and show_clues else 8
+    width = left + puzzle.cols * cell + right
     height = top + puzzle.rows * cell + 8
-    parts = [f'<svg viewBox="0 0 {width:.0f} {height:.0f}" width="{width:.0f}" height="{height:.0f}" role="img">']
+    pad_left = 26 if row_labels else 0
+    pad_bottom = 18 if col_labels else 0
+    view_width = width + pad_left
+    view_height = height + pad_bottom
+    parts = [f'<svg viewBox="{-pad_left} 0 {view_width:.0f} {view_height:.0f}" width="{view_width:.0f}" height="{view_height:.0f}" role="img">']
     if title:
         parts.append(f"<title>{title}</title>")
 
@@ -110,12 +124,26 @@ def render_grid_svg(
         parts.append(f'<line x1="{x:.1f}" y1="{top}" x2="{x:.1f}" y2="{top + puzzle.rows * cell:.1f}" stroke="{GRID_LINE}" stroke-width="1"/>')
 
     if show_clues:
+        weight = ' font-weight="700"' if bold_clues else ""
         for c, clue in enumerate(puzzle.col_clues):
             x = left + (c + 0.5) * cell
-            parts.append(f'<text x="{x:.1f}" y="{top - 7}" text-anchor="middle" font-size="11" fill="{TEXT}">{clue}</text>')
+            parts.append(f'<text x="{x:.1f}" y="{top - 7}" text-anchor="middle" font-size="11"{weight} fill="{TEXT}">{clue}</text>')
         for r, clue in enumerate(puzzle.row_clues):
             y = top + (r + 0.5) * cell + 4
-            parts.append(f'<text x="{left - 6}" y="{y:.1f}" text-anchor="end" font-size="11" fill="{TEXT}">{clue}</text>')
+            if row_clues_right:
+                parts.append(f'<text x="{left + puzzle.cols * cell + 6}" y="{y:.1f}" text-anchor="start" font-size="11"{weight} fill="{TEXT}">{clue}</text>')
+            else:
+                parts.append(f'<text x="{left - 6}" y="{y:.1f}" text-anchor="end" font-size="11"{weight} fill="{TEXT}">{clue}</text>')
+
+    if row_labels:
+        for r in range(puzzle.rows):
+            y = top + (r + 0.5) * cell + 4
+            parts.append(f'<text x="{left - 6:.1f}" y="{y:.1f}" text-anchor="end" font-size="11" fill="{TEXT}">r{r + 1}</text>')
+    if col_labels:
+        bottom = top + puzzle.rows * cell
+        for c in range(puzzle.cols):
+            x = left + (c + 0.5) * cell
+            parts.append(f'<text x="{x:.1f}" y="{bottom + 14:.1f}" text-anchor="middle" font-size="11" fill="{TEXT}">c{c + 1}</text>')
 
     givens = {(r, c): piece for r, c, piece in puzzle.givens}
     for r in range(puzzle.rows):
